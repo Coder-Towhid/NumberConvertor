@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_design"
+
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:text="Number Converter"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:contentDescription="App_Logo"
+                android:src="@drawable/download" />
+
+
+            <EditText
+                android:id="@+id/Decimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Number"
+                android:layout_marginBottom="20dp"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:background="@drawable/focus_design"
+                android:drawableLeft="@drawable/left_design"/>
+            <EditText
+                android:id="@+id/binary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Binary"
+
+                android:digits=""
+                android:textSize="20sp"
+                android:background="@drawable/focus_design"
+                android:drawableLeft="@drawable/left_design_binary"/>
+            <EditText
+                android:id="@+id/Octal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Octal"
+                android:digits=""
+                android:textSize="20sp"
+                android:background="@drawable/focus_design"
+                android:drawableLeft="@drawable/left_design_octal"/>
+            <EditText
+                android:id="@+id/HexaDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="HexaDecimal"
+                android:digits=""
+                android:textSize="20sp"
+                android:background="@drawable/focus_design"
+                android:drawableLeft="@drawable/left_design_hexa"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="CLEAR"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_design"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
